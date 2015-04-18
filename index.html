@@ -15,11 +15,25 @@
     <![endif]-->
 
   <script src="../javascripts/jquery.js" type="text/javascript"></script>
+  <!--
   <script type="text/javascript">
   $(function(){
     $("div[id=publications_panel] a[id=publications]").bind('click', function() {
       var $content = $(this).next();
       if ($content.is(':visible')) {
+        $content.hide('slow');
+      } else{
+        $content.show('fast');
+      }
+    })
+  })
+  </script>
+  -->
+  <script type="text/javascript">
+  $(function(){
+    $("h3 a[id=education]").bind('click', function() {
+      var $content = $(this).next();
+       if ($content.is(':visible')) {
         $content.hide('slow');
       } else{
         $content.show('fast');
