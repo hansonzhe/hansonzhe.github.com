@@ -30,9 +30,10 @@
   </script>
   -->
   <script type="text/javascript">
-  $(function(){
-    $('h3 a[id="education"]').bind('click', function() {
-      var $content = $(this).next();
+    jQuery.noConflict();
+    jQuery(document).ready(function(){
+    jQuery('h3 a[id="education"]').bind('click', function() {
+      var $content = jQuery(this).next();
        if ($content.is(':visible')) {
         $content.hide('slow');
       } else{
